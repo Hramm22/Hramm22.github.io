@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>나의 첫 웹페이지</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f6f8;
+        }
+        header {
+            background-color: #4a90e2;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        main {
+            padding: 20px;
+        }
+        .card {
+            background: white;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            color: #777;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>환영합니다 👋</h1>
+        <p>이것은 index.html 샘플 페이지입니다.</p>
+    </header>
+
+    <main>
+        <div class="card">
+            <h2>소개</h2>
+            <p>HTML, CSS, JavaScript로 웹페이지를 만들 수 있습니다.</p>
+        </div>
+
+        <div class="card">
+            <h2>기능</h2>
+            <ul>
+                <li>간단한 레이아웃</li>
+                <li>기본 스타일 적용</li>
+                <li>반응형 뷰포트 설정</li>
+            </ul>
+        </div>
+
+        <button onclick="sayHello()">클릭해보세요</button>
+    </main>
+
+    <footer>
+        © 2026 My Website
+    </footer>
+
+    <script>
+        function sayHello() {
+            alert("안녕하세요! 😊");
+        }
+    </script>
+
+</body>
+</html>
