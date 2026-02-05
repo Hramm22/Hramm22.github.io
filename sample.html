@@ -3,21 +3,15 @@
 <head>
     <script>
         // 함수의 선언
-        function test() {
-        a=3;
-        b=5;
-        c=a+b;
-        //alert(c); // 3+5=8
-        result=`${a}+${b}=${a+b}`;
-        alert(result);
+        function calculate(); 
+        {
+        console.log('계산을 시작합니다');
+        
+
         }
-        function add(n1,n2)
-        {   
-            a=parseInt(n1);
-            b=parseInt(n2);
-        result=`${a}+${b}=${a+b}`;
-            alert(result);
-        }
+        
+    
+        
             </script>
     <meta charset="UTF-8">
     <title>이하람 홈페이지</title>
@@ -55,6 +49,9 @@
     </style>
 </head>
 <body>
+  숫자1<input type="text" name="n1"><br>
+    숫자2<input type="text" name="n2"><br>
+    
     
 
     <header>
@@ -97,7 +94,7 @@
                 <li>반응형 뷰포트 설정</li>
             </ul>
         </div>
-<button type="button" onclick="add('4','5');">테스트</button>
+<button type="button" onclick="calculate();">계산</button>
         
         <button onclick="goSite()">클릭해보세요</button>
             <img src="images/223rd.jpg">
