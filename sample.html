@@ -4,19 +4,20 @@
     <script>
         // 함수의 선언
         function calculate()
-        {
-        console.log('계산을 시작합니다');
-        a=document.getElementById("n1").value;
-        b=document.getElementById("n2").value;
-            //document.querySelector("#n1").value
-        a=parseInt(a)
-        b=parseInt(b)
-            c=a+b;
-            exp=`${a}+${b}=${a+b}`
-            console.log(exp)
-       alert(exp);
-            //덧셈된 값 c를 화면의 텍스트 박스에 입력하기
-            document.getElementById("n3").value=c
+        { 
+        
+                    console.log('계산을 시작합니다');
+                    a=document.getElementById("n1").value;
+                    b=document.getElementById("n2").value;
+                    //document.querySelector("#n1").value
+                    a=parseInt(a)
+                    b=parseInt(b)
+                    c=a+b;
+                    exp=`${a}+${b}=${a+b}`
+                    console.log(exp)
+                    alert(exp);
+                    //덧셈된 값 c를 화면의 텍스트 박스에 입력하기
+                    document.getElementById("n3").value=c
             
     
         }
@@ -60,8 +61,8 @@
     </style>
 </head>
 <body>
-  숫자1<input type="text" id="n1" name="n1"><br>
-    숫자2<input type="text" id="n2" name="n2"><br>
+  숫자1<input type="text" id="n1" name="n1">
+    숫자2<input type="text" id="n2" name="n2">
     숫자3<input type="text" id="n3" name="n3"><br>
     <button type="button" onclick="calculate();">계산</button>
     
