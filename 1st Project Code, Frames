@@ -1,0 +1,25 @@
+import cv2
+import os
+
+# 영상이 들어있는 폴더 경로
+input_folder = r"C:\Users\a4525\Dataset\behavior\val\abnormal\videos"
+# 프레임을 저장할 폴더
+output_folder = r"C:\Users\a4525\Dataset\behavior\val\abnormal\frames"
+
+if not os.path.exists(output_folder):
+    os.makedirs(output_folder)
+
+video_files = [f for f in os.listdir(input_folder) if f.endswith('.mp4')]
+
+for video_file in video_files:
+    cap = cv2.VideoCapture(os.path.join(input_folder, video_file))
+    count = 0
+    while cap.isOpened():
+        ret, frame = cap.read()
+        if not ret:
+            break
+        # 25프레임마다 추출하고 싶다면 count % 25 == 0 조건 사용
+        # 혹은 그냥 다 추출하려면 그냥 저장
+        cv2.imwrite(f"{output_folder}/{video_file[:-4]}_frame_{count:04d}.jpg", frame)
+        count += 1
+    cap.release()
